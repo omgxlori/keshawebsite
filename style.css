@@ -49,7 +49,9 @@ body {
 }
 
 .container {
-    background-image: url("file:///C:/Users/lbelo/Downloads/Kesha.png");
+    position: relative;
+    z-index: 1;
+    background-image: url("images/Kesha.png");
     background-repeat: no-repeat;
     background-size: contain; /* Adjust the size of the background image */
     background-position: 0% 50%;
@@ -62,41 +64,18 @@ body {
 
 
 .container::before {
+    z-index: 0;
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url("file:///C:/Users/lbelo/Downloads/Untitled%20design%20(5).png"); 
+    background-image: url("images/Untitled\ design\ \(5\).png"); 
     background-repeat: no-repeat;
-    background-size: contain; /* Adjust the size of the background image */
+    background-size: 375px; /* Adjust the size of the background image */
     background-position: 0% 50%; /* Starting position */
-    animation: flash 1s infinite linear;
-}
-
-#joyride-left {
-    width: auto;
-    height: auto;
-    align-items: center;
-    justify-content: left;
-    padding: 0 auto;
-    margin: 75px;
-}
-
-#kesha {
-    padding: 0 auto;
-    border: 10px solid whitesmoke;;
-    width: 500px;
-}
-
-#joyride-right {
-    width: auto;
-    height: auto;
-    align-items: center;
-    justify-content: left;
-    padding: 0 auto;
-    margin: 75px;
+    animation: flash 3s infinite linear;
 }
 
 .banner-image {
