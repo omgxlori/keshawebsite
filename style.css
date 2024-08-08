@@ -1,0 +1,160 @@
+h1 {
+    background-color: whitesmoke;
+    color: red;
+    font-family:'Lucida Sans';
+    position: relative;
+}
+
+body {
+    background-color: black;
+}
+
+@keyframes flash {
+    0%, 5% {
+        background-position: 0% 50%;
+        opacity: 1;
+    }
+    10%, 20% {
+        opacity: 0;
+        background-position: 0% 50%;
+    }
+    25%, 30% {
+        background-position: 50% 50%;
+        opacity: 1;
+    }
+    35%, 45% {
+        opacity: 0;
+        background-position: 50% 50%;
+    }
+    50%, 55% {
+        background-position: 100% 50%;
+        opacity: 1;
+    }
+    60%, 70% {
+        opacity: 0;
+        background-position: 100% 50%;
+    }
+    75%, 80% {
+        background-position: 50% 50%;
+        opacity: 1;
+    }
+    85%, 95% {
+        opacity: 0;
+        background-position: 50% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+        opacity: 1;
+    }
+}
+
+.container {
+    background-image: url("file:///C:/Users/lbelo/Downloads/Kesha.png");
+    background-repeat: no-repeat;
+    background-size: contain; /* Adjust the size of the background image */
+    background-position: 0% 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 300px; /* Adjust padding as needed */
+    margin-top: -75px;
+}
+
+
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("file:///C:/Users/lbelo/Downloads/Untitled%20design%20(5).png"); 
+    background-repeat: no-repeat;
+    background-size: contain; /* Adjust the size of the background image */
+    background-position: 0% 50%; /* Starting position */
+    animation: flash 1s infinite linear;
+}
+
+#joyride-left {
+    width: auto;
+    height: auto;
+    align-items: center;
+    justify-content: left;
+    padding: 0 auto;
+    margin: 75px;
+}
+
+#kesha {
+    padding: 0 auto;
+    border: 10px solid whitesmoke;;
+    width: 500px;
+}
+
+#joyride-right {
+    width: auto;
+    height: auto;
+    align-items: center;
+    justify-content: left;
+    padding: 0 auto;
+    margin: 75px;
+}
+
+.banner-image {
+    width: 100%;
+    display: block;
+}
+
+.rounded-table {
+    border-collapse: separate; /* Use separate to allow border-radius to be visible */
+    border-spacing: 0; /* Remove spacing between table cells */
+    width: 90%;
+    border: 18px solid red;
+    border-radius: 15px;
+    overflow: hidden; /* Ensures rounded corners are visible */
+    background-color: white;
+    font-family: 'Lucida Sans'
+}
+
+.rounded-table th, .rounded-table td {
+    border: 1px solid red;
+    padding: 10px;
+    text-align: center;
+}
+
+.rounded-table th {
+    background-color: whitesmoke;
+}
+
+#discography-cell {
+    background-color: whitesmoke;
+    padding: 0;
+}
+
+.heading-background {
+    color: red;
+    font-family: fantasy;
+    margin: 0;
+    text-align: center;
+    padding: 10px;
+}
+
+.rounded-table tr:first-child th:first-child {
+    border-top-left-radius: 15px;
+}
+
+.rounded-table tr:first-child th:last-child {
+    border-top-right-radius: 15px;
+}
+
+.rounded-table tr:last-child td:first-child {
+    border-bottom-left-radius: 15px;
+}
+
+.rounded-table tr:last-child td:last-child {
+    border-bottom-right-radius: 15px;
+}
+
+#highlighted-cell {
+    background-color: red;
+    padding: 0;
+}
