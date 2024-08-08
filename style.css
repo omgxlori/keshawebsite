@@ -51,7 +51,7 @@ body {
 .container {
     position: relative;
     z-index: 1;
-    background-image: url("Kesha.png");
+    background-image: url("images/Kesha.png");
     background-repeat: no-repeat;
     background-size: contain; /* Adjust the size of the background image */
     background-position: 0% 50%;
@@ -71,7 +71,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url("Untitled\ design\ \(5\).png"); 
+    background-image: url("images/Untitled\ design\ \(5\).png"); 
     background-repeat: no-repeat;
     background-size: 375px; /* Adjust the size of the background image */
     background-position: 0% 50%; /* Starting position */
